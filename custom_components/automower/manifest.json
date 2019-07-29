@@ -1,0 +1,9 @@
+{
+  "domain": "automower",
+  "name": "Husqvarna Automower",
+  "documentation": "https://github.com/walthowd/ha-automower",
+  "dependencies": [],
+  "codeowners": ["@walthowd"],
+  "requirements": ["pyhusmow==0.1.1"],
+  "homeassistant": "0.93.0"
+}

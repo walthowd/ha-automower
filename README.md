@@ -1,12 +1,20 @@
 # ha-automower
+
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
+
 Automower Custom Component for Home Assistant. This is based off the work of [yeah/jan's automower custom component](
 https://github.com/yeah/home-assistant).
 
 This component is packaged for a current modern Home Assistant environment (0.93+) that will be easy to install for new users. 
 
 # Installation Instructions
-Clone or download the zip of this repository and place the files into the <ha-config>/custom_components/automower directory. 
+The easiest method is to use [HACS (Home Assistant Community Store)](https://custom-components.github.io/hacs/). Simply 
+navigate to Settings and add this repository's URL as a Custom Repository.
+
+Alternatively, clone or download the zip of this repository and place the `custom_components/automower` directory into your `<ha-config>/custom_components` directory. 
   
+## Configuration
+
 Add the following to your *configuration.yaml* file:
 
     automower:

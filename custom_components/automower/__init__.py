@@ -41,6 +41,7 @@ STATUS_PAUSED =                 'PAUSED'
 STATUS_EXECUTING_PARK =         'EXECUTING_PARK'
 STATUS_EXECUTING_START =        'EXECUTING_START'
 STATUS_EXECUTING_STOP =         'EXECUTING_STOP'
+STATUS_WAIT_POWER_UP =          'WAIT_POWER_UP'
 STATUS_OFF_HATCH_OPEN =         'OFF_HATCH_OPEN'
 STATUS_OFF_HATCH_CLOSED =       'OFF_HATCH_CLOSED_DISABLED'
 STATUS_OFF_DISABLED =           'OFF_DISABLED'
@@ -59,6 +60,7 @@ STATUSES = {
     STATUS_EXECUTING_START:         { 'icon': 'mdi:dots-horizontal','message': 'Starting...' },
     STATUS_EXECUTING_STOP:          { 'icon': 'mdi:dots-horizontal','message': 'Stopping...' },
     STATUS_EXECUTING_PARK:          { 'icon': 'mdi:dots-horizontal','message': 'Preparing to park...' },
+    STATUS_WAIT_POWER_UP:           { 'icon': 'mdi:dots-horizontal','message': 'Powering up...' },
     STATUS_OFF_HATCH_OPEN:          { 'icon': 'mdi:alert',          'message': 'Hatch opened' },
     STATUS_OFF_HATCH_CLOSED:        { 'icon': 'mdi:pause',          'message': 'Stopped but not on base' },
     STATUS_OFF_DISABLED:            { 'icon': 'mdi:close-circle-outline', 'message': 'Off'}
@@ -68,8 +70,11 @@ STATUSES = {
 ERROR_MESSAGES = {
     1:  'Outside working area',
     2:  'No loop signal',
+    9:  'Trapped',
     10: 'Upside down',
-    13: 'No drive'
+    12: 'Empty battery',
+    13: 'No drive',
+    25: 'Cutting system blocked'
 }
 
 # TODO: Add more models as we observe them
