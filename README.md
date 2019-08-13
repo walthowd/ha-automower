@@ -5,7 +5,7 @@ https://github.com/yeah/home-assistant).
 This component is packaged for a current modern Home Assistant environment (0.93+) that will be easy to install for new users. 
 
 
-# Avaiable with HACS (Home Assistant Community Store)
+# Available with HACS (Home Assistant Community Store)
 This is a custom component. Custom components are not installed by default in your Home Assistant installation. [HACS](https://github.com/custom-components/hacs) is an Home Assistant store integration from which this integration can be easily installed and updated. By using HACS you will also make sure that any new versions are installed by default and as simple as the installation itself.
 
 # Configuration
