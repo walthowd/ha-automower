@@ -86,6 +86,7 @@ MODELS = {
     'E': 'Automower 420',
     'G': 'Automower 430X',
     'H': 'Automower 450X',
+    'K': 'Automower 310',
     'L': 'Automower 315/X'
 }
 
