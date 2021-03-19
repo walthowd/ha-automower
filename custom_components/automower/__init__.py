@@ -78,6 +78,7 @@ ERROR_MESSAGES = {
     10: 'Upside down',
     12: 'Empty battery',
     13: 'No drive',
+    17: 'Charging station blocked',
     25: 'Cutting system blocked'
 }
 
