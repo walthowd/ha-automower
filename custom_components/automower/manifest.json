@@ -4,6 +4,6 @@
   "documentation": "https://github.com/walthowd/ha-automower/",
   "dependencies": [],
   "codeowners": ["@walthowd"],
-  "version": "1.1.1",
+  "version": "1.1.2",
   "requirements": ["pyhusmow==0.1.1"]
 }
