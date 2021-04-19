@@ -26,7 +26,7 @@ Clone or download the zip of this repository and place the files into the <ha-co
 # Usage
 This component will create a vacuum entity and a device_tracker entity for your automowers. The vacuum entity can be used to control the automower and view it's current status. Calling the vacuum.return_to_base service will park the automower until further notice, vacuum.stop will stop the mower in it's current location, and calling vacuum.start_pause service will resume your current schedule. 
 
-The device_tracker.entity can be used to return the current GPS coordinates of your mower. Home Assistant by default will not show device_trackers if they are in your home zone but you can [follow the directions to add a Google Maps card](https://www.home-assistant.io/cookbook/google_maps_card/) and then adding the following to your camera config
+The device_tracker.entity can be used to return the current GPS coordinates of your mower. Home Assistant by default will not show device_trackers if they are in your home zone but you can [follow the directions to add a Google Maps card](https://web.archive.org/web/20201127065354/https://www.home-assistant.io/cookbook/google_maps_card/) and then adding the following to your camera config
 
     camera:
     - platform: generic
