@@ -279,7 +279,7 @@ class AutomowerDevice(VacuumEntity):
 
     @property
     def state(self):
-        """Return the state of the automower (same as status)."""
+        """Return the state of the automower, according to the vacuum entity states."""
         return STATUSES.get(self._mower_status, {}).get('state', STATE_ERROR)
 
     @property
