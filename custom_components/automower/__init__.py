@@ -15,6 +15,7 @@ from homeassistant.const import CONF_ICON, CONF_PASSWORD, CONF_SCAN_INTERVAL, CO
 from homeassistant.components.vacuum import (
     SUPPORT_BATTERY, SUPPORT_PAUSE, SUPPORT_RETURN_HOME,
     SUPPORT_STATUS, SUPPORT_STOP, SUPPORT_TURN_OFF,
+    STATE_IDLE, STATE_ON, STATE_PAUSED,
     SUPPORT_TURN_ON, STATE_CLEANING, STATE_DOCKED,
     STATE_RETURNING, STATE_ERROR)
 try:
@@ -58,7 +59,7 @@ STATUSES = {
     STATUS_OK_CUTTING:              { 'icon': DEFAULT_ICON,         'message': 'Cutting', 'state': STATE_CLEANING },
     STATUS_OK_CUTTING_MANUAL:       { 'icon': DEFAULT_ICON,         'message': 'Cutting (manual timer override)', 'state': STATE_CLEANING },
     STATUS_OK_LEAVING:              { 'icon': DEFAULT_ICON,         'message': 'Leaving charging station', 'state': STATE_RETURNING },
-    STATUS_PAUSED:                  { 'icon': 'mdi:pause',          'message': 'Paused', 'state': STATE_DOCKED, },
+    STATUS_PAUSED:                  { 'icon': 'mdi:pause',          'message': 'Paused', 'state': STATE_PAUSED, },
     STATUS_PARKED_TIMER:            { 'icon': 'mdi:timetable',      'message': 'Parked due to timer', 'state': STATE_DOCKED },
     STATUS_PARKED_AUTOTIMER:        { 'icon': 'mdi:timetable',      'message': 'Parked due to weather timer', 'state': STATE_DOCKED },
     STATUS_PARKED_PARKED_SELECTED:  { 'icon': 'mdi:sleep',          'message': 'Parked manually', 'state': STATE_DOCKED },
@@ -66,10 +67,10 @@ STATUSES = {
     STATUS_EXECUTING_START:         { 'icon': 'mdi:dots-horizontal','message': 'Starting...', 'state': STATE_CLEANING },
     STATUS_EXECUTING_STOP:          { 'icon': 'mdi:dots-horizontal','message': 'Stopping...', 'state': STATE_RETURNING },
     STATUS_EXECUTING_PARK:          { 'icon': 'mdi:dots-horizontal','message': 'Preparing to park...', 'state': STATE_RETURNING },
-    STATUS_WAIT_POWER_UP:           { 'icon': 'mdi:dots-horizontal','message': 'Powering up...', 'state': STATE_CLEANING },
+    STATUS_WAIT_POWER_UP:           { 'icon': 'mdi:dots-horizontal','message': 'Powering up...', 'state': STATE_ON },
     STATUS_OFF_HATCH_OPEN:          { 'icon': 'mdi:alert',          'message': 'Hatch opened', 'state': STATE_ERROR },
-    STATUS_OFF_HATCH_CLOSED:        { 'icon': 'mdi:pause',          'message': 'Stopped but not on base', 'state': STATE_ERROR },
-    STATUS_OFF_DISABLED:            { 'icon': 'mdi:close-circle-outline', 'message': 'Off', 'state': STATE_DOCKED }
+    STATUS_OFF_HATCH_CLOSED:        { 'icon': 'mdi:pause',          'message': 'Stopped but not on base', 'state': STATE_PAUSED },
+    STATUS_OFF_DISABLED:            { 'icon': 'mdi:close-circle-outline', 'message': 'Off', 'state': STATE_IDLE }
 }
 
 # TODO: Add more error messages as we observe them
