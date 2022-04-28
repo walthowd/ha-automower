@@ -30,7 +30,6 @@ _LOGGER = logging.getLogger(__name__)
 
 DEFAULT_ICON = 'mdi:robot-mower'
 DOMAIN = 'automower'
-REQUIREMENTS = ['pyhusmow==0.1.1']
 VENDOR = 'Husqvarna'
 
 # TODO: Add more statuses as we observe them
